@@ -1,0 +1,6 @@
+[submodule "dependencies/Diabetes"]
+	path = dependencies/Diabetes
+	url = git@github.com:inextor/Diabetes.git
+[submodule "dependencies/HungerSpider"]
+	path = dependencies/HungerSpider
+	url = git@github.com:inextor/HungerSpider.git
