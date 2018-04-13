@@ -1,0 +1,44 @@
+
+#pageMain main>div
+{
+	max-width	: 500px;
+	margin		: 0 auto;
+	box-sizing	: border-box;
+	padding-bottom	: 30px;
+}
+
+#pageMain .container > [data-zendesk-user]
+{
+	display		: block;
+}
+
+#pageMainDayLinks 
+{
+	margin		: 0 auto;
+	width		: 100%;
+	box-sizing				: border-box;
+}
+
+#pageMainDayLinks .box 
+{
+	width					: 30%;
+	text-align				: center;
+	display					: inline-block;
+	box-sizing				: border-box;
+}
+#pageMainAgentsData >div
+{
+	overflow				: hidden;
+}
+#pageMainAgentsData  b
+{
+	width					: 40%;
+	height					: 30px;
+	display					: inline-block;
+}
+#pageMainAgentsData span 
+{
+	width					: 45%;
+	height					: 30px;
+	display					: inline-block;
+}

@@ -1,0 +1,444 @@
+body
+{
+	font-family				: Helvetica, Arial, sans-serif;
+	background				: #F2F5F7;
+	color					: #666666;
+}
+
+
+body>.page>header
+{
+	background-color		: #ffffff;
+	box-shadow				: 0px 3px 5px -1px rgba(0,0,0,0.3);
+	z-index					: 2;
+}
+
+.page>main
+{
+	padding					: 1em;
+	box-sizing				: border-box;
+}
+.list
+{
+	margin					: 10px 0;
+	box-sizing				: border-box;
+}
+
+.list > a
+,.list > div
+{
+	width					: 100%;
+	min-height				: 40px;
+	border-top				: 1px solid rgb(221,221,221);
+	text-decoration			: none;
+	padding					: 7px 10px;
+	color					: #666666;
+	font-size				: 20px;
+	font-weight				: 400;
+	box-sizing				: border-box;
+}
+
+.list > a
+{
+	display					: block;
+}
+
+.list > a:first-child
+,.list > div:first-child
+{
+	border-top				: none;
+}
+
+/* for header */
+.header_buttons
+{
+	display					: -ms-flexbox;
+	display					: -webkit-flex;
+	display					: flex;
+	-webkit-flex-direction	: row;
+	-ms-flex-direction		: row;
+	flex-direction			: row;
+	-webkit-flex-wrap		: nowrap;
+	-ms-flex-wrap			: nowrap;
+	flex-wrap				: nowrap;
+	-webkit-justify-content	: flex-start;
+	-ms-flex-pack			: start;
+	justify-content			: flex-start;
+	-webkit-align-content	: stretch;
+	-ms-flex-line-pack		: stretch;
+	align-content			: stretch;
+	-webkit-align-items		: center;
+	-ms-flex-align			: center;
+	align-items				: center;
+}
+
+.header_buttons>a
+,.header_buttons>div
+{
+	-webkit-order			: 0;
+	-ms-flex-order			: 0;
+	order					: 0;
+	-webkit-flex			: 0 1 auto;
+	-ms-flex				: 0 1 auto;
+	flex					: 0 1 auto;
+	-webkit-align-self		: auto;
+	-ms-flex-item-align		: auto;
+	align-self				: auto;
+}
+
+.page>header>h1
+,.header_buttons>h1
+{
+	padding					: 0 10px 0 20px;
+	margin					: 0;
+	-webkit-order			: 0;
+	-ms-flex-order			: 0;
+	order					: 0;
+	-webkit-flex			: 1 1 auto;
+	-ms-flex				: 1 1 auto;
+	flex					: 1 1 auto;
+	-webkit-align-self		: auto;
+	-ms-flex-item-align		: auto;
+	align-self				: auto;
+	font-weight				: bold;
+	font-size				: 18px;
+	color					: #000000;
+	line-height				: 45px;
+}
+
+a.back:before
+{
+	/*content				: 'â†'; */
+	content					: '←';
+	font-weight				: bold;
+	font-size				: 20px;
+	vertical-align			: middle;
+	color					: #dddddd;
+}
+
+a.back
+{
+	text-decoration			: none;
+	color					: #dddddd;
+	padding					: 0 10px;
+	font-size				: 20px;
+	font-weight				: bold;
+}
+
+a.menu
+{
+  text-decoration		: none;
+  color				: #dddddd;
+  padding				: 0 10px;
+  font-size			: 20px;
+  font-weight			: bold;
+}
+
+a.menu:before
+{
+  content				: 'â˜° ';
+}
+
+.pagination
+{
+  -webkit-user-select		: none;/* Chrome all / Safari all */
+  -moz-user-select		: none;/* Firefox all */
+  -ms-user-select			: none;/* IE 10+ */
+  user-select				: none;
+}
+
+.pagination>b
+{
+  margin					: 0 10px;
+  min-width				: 27px;
+  height					: 27px;
+  line-height				: 27px;
+  font-weight				: bold;
+  font-size				: 12px;
+  display					: inline-block;
+  border					: 0;
+  text-align				: center;
+  vertical-align			: middle;
+
+  background-color		: #3498DB;
+  border-color			: #3498DB;
+  color					: #ffffff;
+  border-radius			: 27px !important;
+
+}
+
+.pagination>span
+{
+  margin					: 0 10px;
+  min-width				: 27px;
+  height					: 27px;
+  line-height				: 27px;
+  padding					: 0;
+  font-weight				: normal;
+  font-size				: 14px;
+  display					: inline-block;
+  border					: 0;
+  color					: #777777;
+  cursor					: not-allowed;
+  text-align				: center;
+  vertical-align			: middle;
+}
+
+.pagination>a
+{
+	vertical-align			: middle;
+	margin					: 0 10px;
+	min-width				: 27px;
+	height					: 27px;
+	line-height				: 27px;
+	font-weight				: normal;
+	color					: #3498DB;
+	display					: inline-block;
+	border					: 0;
+	text-decoration			: none;
+	margin-left				: 5px;
+	margin-right			: 5px;
+	border					: none !important;
+	padding					: 0;
+	font-size				: 12px;
+	text-align				: center;
+}
+
+.pagination>a:hover
+{
+	background-color		: #3498DB;
+	border-color			: #3498DB;
+	color					: #ffffff;
+	border-radius			: 27px !important;
+}
+
+.pagination>a:first-child
+,.pagination>a:last-child
+,.pagination>span:first-child
+,.pagination>span:last-child
+{
+	font-weight				: bold;
+	font-size				: 27px;
+	vertical-align			: middle;
+	line-height				: 22px;
+}
+
+label
+{
+	display					: block;
+	width					: 100%;
+	min-height				: 40px;
+	line-height				: 40px;
+	color					: #666666;
+	font-weight				: bold;
+}
+
+input
+{
+	color					: #777777;
+	height					: 25px;
+	padding					: 6px 12px;
+	font-size				: 14px;
+	line-height				: 1.42857143;
+	color					: #555555;
+	background-color		: #ffffff;
+	background-image		: none;
+	border					: 1px solid #cccccc;
+	border-radius			: 4px;
+	margin					: 0;
+}
+
+input[type="file"]
+{
+	width					: 100%;
+	box-sizing				: border-box;
+	min-height				: 40px;
+}
+
+select
+{
+	display					: block;
+	width					: 100%;
+	height					: 40px;
+	padding					: 6px 12px;
+	font-size				: 14px;
+	line-height				: 1.42857143;
+	color					: #555555;
+	background-color		: #ffffff;
+	background-image		: none;
+	border					: 1px solid #ccc;
+	border-radius			: 4px;
+}
+
+input[type="submit"]
+{
+	box-sizing				: border-box;
+	color					: #777777;
+	padding					: 6px 12px;
+	font-size				: 14px;
+	line-height				: 1.42857143;
+	color					: #FFFFFF;
+	background-color		: #A7048A;
+	background-image		: none;
+	border					: 1px solid #ccc;
+	border-radius			: 4px;
+	height					: 40px;
+	min-width				: 160px;
+	margin					: 20px;
+	cursor					: pointer;
+}
+
+.row_icon
+,.list>.row_icon
+{
+	display					: -webkit-flex;
+	display					: flex;
+	-webkit-flex-direction	: row;
+	-ms-flex-direction		: row;
+	flex-direction			: row;
+	-webkit-flex-wrap		: nowrap;
+	-ms-flex-wrap			: nowrap;
+	flex-wrap				: nowrap;
+	-webkit-justify-content	: flex-start;
+	-ms-flex-pack			: start;
+	justify-content			: flex-start;
+	-webkit-align-content	: stretch;
+	-ms-flex-line-pack		: stretch;
+	align-content			: stretch;
+	-webkit-align-items		: center;
+	-ms-flex-align			: center;
+	align-items				: center;
+}
+.row_icon>*
+{
+	webkit-order			: 0;
+	-ms-flex-order			: 0;
+	order					: 0;
+	-webkit-flex			: 0 1 auto;
+	-ms-flex				: 0 1 auto;
+	flex					: 0 1 auto;
+	-webkit-align-self		: auto;
+	-ms-flex-item-align		: auto;
+	align-self				: auto;
+}
+
+.row_icon>div:nth-child(2)
+,.row_icon>a:nth-child(2)
+{
+	padding					: 0 10px;
+	margin					: 0;
+	-webkit-order			: 0;
+	-ms-flex-order			: 0;
+	order					: 0;
+	-webkit-flex			: 1 1 auto;
+	-ms-flex				: 1 1 auto;
+	flex					: 1 1 auto;
+	-webkit-align-self		: auto;
+	-ms-flex-item-align		: auto;
+	align-self				: auto;
+	font-weight				: lighter;
+}
+
+.container
+{
+	box-shadow				: 0px 3px 5px -1px rgba(0,0,0,0.3);
+	border					: 1px solid #dbe1e8;
+	background				: #ffffff;
+	margin					: 0 auto;
+	padding					: 1em;
+	box-sizing				: border-box;
+}
+
+.field_container
+{
+	padding					: 10px 16px;;
+}
+
+.material_input
+{
+	border					: none;
+	border-bottom			: 1px solid rgba(0,0,0,.12);
+	display					: block;
+	font-size				: 16px;
+	margin					: 0;
+	padding					: 4px 0;
+	width					: 100%;
+	background				: 0 0;
+	text-align				: left;
+	color					: inherit;
+	text-shadow				: none;
+}
+.material_input:after
+{
+	visibility				: visible;
+}
+
+.material_input:focus:after
+{
+	background-color		: #3f51b5;
+	bottom					: 20px;
+	content					: '';
+	height					: 2px;
+	left					: 45%;
+	position				: absolute;
+	transition-duration		: .2s;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	visibility				: hidden;
+	width					: 10px;
+}
+
+.collapse
+{
+	display					: -ms-flexbox;
+	display					: -webkit-flex;
+	display					: flex;
+	-webkit-flex-direction	: row;
+	-ms-flex-direction		: row;
+	flex-direction			: row;
+	-webkit-flex-wrap		: wrap;
+	-ms-flex-wrap			: wrap;
+	flex-wrap				: wrap;
+	-webkit-justify-content	: flex-start;
+	-ms-flex-pack			: start;
+	justify-content			: flex-start;
+	-webkit-align-content	: stretch;
+	-ms-flex-line-pack		: stretch;
+	align-content			: stretch;
+	-webkit-align-items		: flex-start;
+	-ms-flex-align			: start;
+	align-items				: flex-start;
+}
+
+.collapse>*
+{
+	width					: 300px;
+	-webkit-order			: 0;
+	-ms-flex-order			: 0;
+	order					: 0;
+	-webkit-flex			: 1 1 auto;
+	-ms-flex				: 1 1 auto;
+	flex					: 1 1 auto;
+	-webkit-align-self		: auto;
+	-ms-flex-item-align		: auto;
+	align-self				: auto;
+	min-width				: 280px;
+}
+
+.animate
+{
+	transition				: all 0.5s ease;
+}
+
+@media( min-width: 800px )
+{
+  .menu_active .page.active
+  {
+	left					: 200px;
+  }
+
+  .menu_active header .menu
+  {
+	display					: none;
+  }
+
+}

@@ -1,14 +1,23 @@
-<html>
-	<body>
-		<div id="pageMain" class="page start active">
-			<header>Hello World</header>
-			<main>
-				<h2>Online Users</h2>
-				<div class="container" id="pageMainOnlineUsers"></div>
-				<h2>Offline Users</h2>
-				<div class="container" id="pageMainOfflineUsers"></div>
-			</main>
-			<footer> Footer </footer>
+<div id="pageMain" class="start page active">
+	<header>Hello World</header>
+	<main>
+		<div>
+			<h2>Today Info</h2>
+			<div class="container" id="pageMainTodayInfo">
+			</div>
+			<h2>Online Users</h2>
+			<div class="container" id="pageMainOnlineUsers"></div>
+			<h2>Offline Users</h2>
+			<div class="container" id="pageMainOfflineUsers"></div>
+			<h2>Working days</h2>
+			<div id="pageMainDayLinks" class="gridContainer container">
+				<a href="#" data-day="yesterday" class="box">[Yesterday]</a>
+				<a href="#" data-day="today" class="box">[Today]</a>
+				<a href="#" data-day="tomorrow" class="box">[Tomorrow]</a> 
+			</div>
+
+			<div id="pageMainAgentsData" class="container"></div>
 		</div>
-	</body>
-</html>
+	</main>
+	<footer> Footer </footer>
+</div>
